@@ -7,12 +7,15 @@ import Inicio from "./pages/Inicio";
 import Detalhes from "./pages/Detalhes";
 import Contato from "./pages/Contato";
 import Filme from "./pages/Filme";
+import Aula15_Login from "./components/Aula15_Login";
+
 function App() {
     return (
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Principal />} />
                 <Route path="/sobre" element={<Sobre />} />
+                <Route path="/login" element={<Aula15_Login />} />
                 <Route path="/perfil/:nome" element={<Perfil />} />
                 <Route path="*" element={<NotFound />} />
                 <Route path="/inicio" element={<Inicio />} />
